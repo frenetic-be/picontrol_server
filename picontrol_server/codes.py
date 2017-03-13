@@ -11,8 +11,9 @@ You can check the code by ssh'ing to the server and use the picontrol_server
 command line tool.
 """
 
-import config
+from config import config
 import os
+
 CONNECTION_CODE_FILE = config.CONNECTION_CODE_FILE
 
 def get_connection_code():
