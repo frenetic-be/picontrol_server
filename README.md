@@ -2,8 +2,8 @@
 
 ## Python server for the PiControl iOS App
 
-This program is meant to be used together with the PiControl IOS App (under development). This is a simple socket.io Python server that will continuously listen for connection. 
-Via the iOS PiControl App, a user can connect to the server and execute user-defined commands on the server. 
+This program is meant to be used together with the PiControl iOS app (under development). This is a simple socket.io Python server that will continuously listen for connection. 
+Via the iOS PiControl app, a user can connect to the server and execute user-defined commands on the server. 
 
 This program was meant to run on a Raspberry Pi and allow limited control of the Pi through an iOS interface.
 
