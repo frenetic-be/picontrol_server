@@ -37,6 +37,9 @@ PORT = 5234
 # in the file defined here
 CONNECTION_CODE_FILE = '~/.config/picontrol_server_socket_connection'
 
+# If your server supports GPIO (that is if you are running this program on a
+# Raspberry Pi.
+SERVER_HAS_GPIO = False
 
 ##########################
 # User-defined functions #
@@ -47,14 +50,10 @@ def time():
     return datetime.datetime.now().strftime('%H:%M:%S')
 
 
-def utc():
-    return datetime.datetime.utcnow().strftime('%m/%d/%Y %H:%M:%S')
-
-
 def date():
     return datetime.datetime.now().strftime('%m/%d/%Y')
 
-    
+
 def coin_flip():
     number = random.randint(0, 1)
     return "Heads" if number else "Tails"
