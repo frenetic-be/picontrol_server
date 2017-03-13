@@ -1,0 +1,12 @@
+.gitignore~
+MANIFEST
+.DS_Store
+dist/
+dist/picontrol_server-1.0/*
+dist/picontrol_server-1.0
+dist/.DS_Store
+build/
+build/*
+picontrol_server.egg-info/
+picontrol_server.egg-info/*
+*.pyc
