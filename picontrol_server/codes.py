@@ -14,7 +14,7 @@ command line tool.
 from config import config
 import os
 
-CONNECTION_CODE_FILE = config.CONNECTION_CODE_FILE
+CONNECTION_CODE_FILE = os.path.expanduser(config.CONNECTION_CODE_FILE)
 
 def get_connection_code():
     '''Returns the connection code written in CONNECTION_CODE_FILE. If the file

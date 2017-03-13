@@ -10,7 +10,10 @@ will be sent to the client as a response from the call.
 This file also contains a few configurable constants used by the
 picontrol_server script.
 
-For example, imagine the following function:
+When changed are being made to this file, the server should be restarted.
+
+Example:
+Imagine the following function:
 
 def time():
     return datetime.datetime.now().strftime('%H:%M:%S')
