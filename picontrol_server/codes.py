@@ -11,7 +11,7 @@ You can check the code by ssh'ing to the server and use the picontrol_server
 command line tool.
 """
 
-from config import config
+from .config import config
 import os
 
 CONNECTION_CODE_FILE = os.path.expanduser(config.CONNECTION_CODE_FILE)
