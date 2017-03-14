@@ -34,8 +34,8 @@ _CONFIG_DOC = '''Module containing all configurable constants for
 picontrol_server. The constants are defined in the config file.'''
 config = _types.ModuleType('config', _CONFIG_DOC)
 
-_USERCOMMANDS_DOC = '''Module containing all configurable constants for
-picontrol_server. The constants are defined in the config file.'''
+_USERCOMMANDS_DOC = '''Module containing all user-defined commands.
+The commands are defined in the config file as functions.'''
 usercommands = _types.ModuleType('usercommands', _USERCOMMANDS_DOC)
 
 # Split _config in two separate submodules
