@@ -9,7 +9,8 @@
 
 __version__ = '1.0'
 
-from .main import main
-
-if __name__ == '__main__':
-    main()
+from . import main
+from . import codes
+from .config import config, usercommands
+from . import sockets
+from . import threads

@@ -14,7 +14,9 @@ command line tool.
 from .config import config
 import os
 
-CONNECTION_CODE_FILE = os.path.expanduser(config.CONNECTION_CODE_FILE)
+_USERNAME = os.getenv("SUDO_USER") or os.getenv("USER")
+_HOME = os.path.expanduser('~'+_USERNAME)
+CONNECTION_CODE_FILE = config.CONNECTION_CODE_FILE.replace('~', _HOME)
 
 def get_connection_code():
     '''Returns the connection code written in CONNECTION_CODE_FILE. If the file

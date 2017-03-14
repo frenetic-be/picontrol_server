@@ -44,6 +44,10 @@ CONNECTION_CODE_FILE = '~/.config/picontrol_server_socket_connection'
 # Raspberry Pi.
 SERVER_HAS_GPIO = False
 
+# For debugging purposes, you might want to set these logging options to True.
+SERVER_LOGGER = True
+SERVER_ENGINEIO_LOGGER = True 
+
 ##########################
 # User-defined functions #
 ##########################

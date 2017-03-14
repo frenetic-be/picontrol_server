@@ -1,0 +1,11 @@
+_picontrol_server_complete()
+{
+  local cur prev
+
+  COMPREPLY=()
+  cur=${COMP_WORDS[COMP_CWORD]}
+
+  COMPREPLY=( $(compgen -W "run code config commands" -- $cur) )
+  return 0
+} &&
+complete -F _picontrol_server_complete picontrol_server

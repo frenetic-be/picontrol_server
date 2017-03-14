@@ -47,3 +47,6 @@ for name in dir(_config):
         usercommands.__dict__[name] = var
     elif not isinstance(var, _types.ModuleType):
         config.__dict__[name] = var
+
+config.__file__ = _FILENAME
+usercommands.__file__ = _FILENAME

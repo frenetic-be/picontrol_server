@@ -18,8 +18,22 @@ Depending on how your computer is set-up, you might need admin privileges for th
     sudo python setup.py install
     
 
-This will install a console script called `picontrol_server` and a configuration file located at `~/.config/picontrol_server_commands.py`.
+This will install the `picontrol_server` Python package, a console script called `picontrol_server` and a configuration file located at `~/.config/picontrol_server_config.py`. 
 
-#### Usage
+#### Auto-completion
 
+For bash users, it should also install a script in `/etc/bash_completion.d/` that enables auto-completion for the `picontrol_server` script. If auto-completion doesn't work in a new bash terminal, you might need to add the following lines to your bashrc file:
+
+    if [ -f /etc/bash_completion.d/picontrol_server ]; then
+        source /etc/bash_completion.d/picontrol_server
+    fi
+
+#### Script usage
+
+
+#### Python package documentation
+
+The `picontrol_server` package is composed of seven sub-modules:
+
+1. picontrol_server
 ...

@@ -1,0 +1,2 @@
+# Include the auto-completion files
+recursive-include auto-completion *
