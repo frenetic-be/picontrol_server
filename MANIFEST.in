@@ -1,2 +1,5 @@
 # Include the auto-completion files
 recursive-include auto-completion *
+
+# Include the readme file
+include README.md

@@ -122,3 +122,4 @@ the server to the client.
 
 ##### picontrol_server.usercommands
 
+This module contains all user-defined commands. The commands are defined in the config file as functions.
