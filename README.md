@@ -138,3 +138,18 @@ the server to the client.
 ##### picontrol_server.usercommands
 
 This module contains all user-defined commands. The commands are defined in the config file as functions.
+
+
+#### Frequently Asked Questions
+
+- Status is "Server has no GPIO capability". What does it mean?
+
+It means that your server has not been configured for General-Purpose Input and Output.
+
+If your server is a Raspberry Pi, all you need to do is edit the config file and set `SERVER_HAS_GPIO` to `True`. Make sure to restart your server after changing the config file.
+
+If you use another computer as a server, GPIO is not supported. So, you cannot use this capability.
+
+- The iOS app is asking me for a connection code. Where can I get it?
+
+Simple, log on to your raspberry pi. Open a terminal window (if you used `ssh`, you already have one open) and type `picontrol_server code`. This will tell you what connection code to use. Type it in your iOS app and that's it. You will not be asked the code again, unless you reset your device's data.
