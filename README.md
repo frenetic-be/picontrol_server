@@ -20,6 +20,21 @@ Depending on how your computer is set-up, you might need admin privileges for th
 
 This will install the `picontrol_server` Python package, a console script called `picontrol_server` and a configuration file located at `~/.config/picontrol_server_config.py`. 
 
+#### Uninstall
+
+If, for one reason or another, you want to uninstall this program, you will need to remove a few files manually.
+
+    # Delete bash completion file
+    sudo rm /etc/bash_completion.d/picontrol_server
+    # Delete config files
+    sudo rm ~/.config/picontrol_server_*
+    # Delete console script
+    sudo rm $(which picontrol_server)
+    # Uninstall Python package
+    sudo pip uninstall picontrol_server
+
+If you do not have `pip` installed, remove all of the Python package file manually (first locate the `picontrol_server` Python package and delete all its files).
+
 #### Auto-completion
 
 For bash users, it should also install a script in `/etc/bash_completion.d/` that enables auto-completion for the `picontrol_server` script. If auto-completion doesn't work in a new bash terminal, you might need to add the following lines to your bashrc file:
